@@ -1,0 +1,115 @@
+/* Full background */
+.checkout {
+  position: relative;
+  background: url("../images/isda.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Dark overlay */
+.checkout::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* Checkout container */
+.checkout-section {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(235, 233, 233, 0.3);
+  border-radius: 15px;
+  color: white;
+}
+
+/* Inputs */
+.checkout-section input,
+.checkout-section textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+
+/* Button */
+.primaryy-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #00a884;
+  color: white;
+  transition: 0.2s;
+}
+
+.primaryy-button:hover {
+  background: #00906f;
+}
+
+.checkh1 {
+    text-align: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+}
+
+.back-button img {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+
+.return a {
+    text-decoration: none;
+}
+
+.order-card {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.order-card p {
+    margin: 6px 0;
+}
+
+.order-actions {
+    margin-top: 15px; /* <-- This prevents blocking the address */
+    display: flex;
+    gap: 15px; /* space between Delete and Add More buttons */
+}
+
+.primaryyy-button {
+padding: 10px 20px;
+display: inline-block;
+border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #00a884;
+  color: white;
+  transition: 0.2s;
+}
+
+.primaryyy-button:hover {
+  background: #00906f;
+}
+
+.order-actions a {
+    text-decoration: none;
+}
+
+.order-buttons a {
+    text-decoration: none;
+}

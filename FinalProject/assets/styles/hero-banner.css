@@ -1,0 +1,94 @@
+#hero-banner {
+  position: relative;
+  display: flex;
+  padding: 100px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: url(../images/isda.jpg) center center / cover no-repeat fixed;
+  color: white;
+  text-align: left;
+}
+
+#hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content,
+.hero-image {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#content h1 {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 40px;
+        
+
+}
+.hero-image img {
+  width: 480px;
+  border-radius: 16px;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  #hero-banner {
+      
+    padding: 60px 20px;
+    text-align: center;
+    background-attachment: unset;
+    flex-direction: column;
+    text-align: justify;
+    
+    
+  }
+
+
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 90%;
+  }
+  .hero-content h1 {
+    text-align: center;
+  }
+}
